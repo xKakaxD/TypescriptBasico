@@ -20,6 +20,15 @@ class Person implements IPerson{
     }
 }
 
+//Forma mais clean de criar a classe e ja atirbuir se for o caso
+class PersonRefact {
+    constructor(
+        readonly id: number,
+        protected name: string,
+        private age: number)
+        {}
+}
+
 class Employee extends Person{
     constructor(id: number, name: string, age: number){
         super(id, name, age)
