@@ -1,8 +1,17 @@
-const sum = (x: number, y: number) =>{
-    return (x + y);
+interface MathFunc {
+    (x: number, y: number): number;
+}
+
+const sum: MathFunc = (x: number, y: number) => {
+    return x + y;
 }
 
 const value = sum(1, 4);
+
+const sub: MathFunc = (x: number, y: number) =>{
+    return x - y;
+}
+
 
 //como retornar em string ou em number?
 const sum2 = (x: number, y: number): string | number=>{

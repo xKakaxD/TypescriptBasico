@@ -10,6 +10,7 @@ type User = {
     email?: string;
     password: string;
     orders: Order[];
+    register(): string;//propriedade como função
 };
 
 const user: User = {
@@ -18,6 +19,9 @@ const user: User = {
     email:'kaka@gmail.com',
     password: '1234',
     orders: [{productId: '1', price: 200 }],
+    register() {
+        return 'Registrado';
+    },
 }
 
 const printLog = (message: string) => {}
@@ -34,7 +38,10 @@ const author: Author & User = {
     books: ['lorem','ipsum','fake'],
     firstName: 'Itachi',
     orders: [],
-    password: '12345'
+    password: '12345',
+    register() {
+        return 'Não Registrado';
+    },
 };
 
 //Interface READONLY  não deixa alterar depois a variável
