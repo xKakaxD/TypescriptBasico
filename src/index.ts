@@ -23,7 +23,7 @@ const people: [number, string] [] =[
 ];
 
 //Interssection
-const productId: string | number | boolean = false:
+const productId: string | number | boolean = false;
 
 //Enum
 enum Direction{

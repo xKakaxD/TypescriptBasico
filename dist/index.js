@@ -1,4 +1,28 @@
 "use strict";
+//Tipos Básicos
 let age = 5;
-age = 5;
-console.log(age);
+const firstName = 'Kaká';
+const isValid = true;
+let idk = 5;
+idk = "12";
+idk = true;
+const ids = [1, 2, 3, 4, 5];
+const booleans = [true, false, false, false, true];
+const names = ["Kaká", "Lobo", "Aline", "Felipe"];
+//Tupla
+const person = [2, 'Lobo'];
+//Lista de Tupla
+const people = [
+    [1, 'Kaká'],
+    [3, 'Aline'],
+    [4, 'Felipe'],
+];
+//Interssection
+const productId = false;
+//Enum
+var Direction;
+(function (Direction) {
+    Direction[Direction["Up"] = 1] = "Up";
+    Direction[Direction["Down"] = 2] = "Down";
+})(Direction || (Direction = {}));
+console.log(Direction);
