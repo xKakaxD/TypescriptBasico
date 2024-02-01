@@ -24,5 +24,11 @@ var Direction;
 (function (Direction) {
     Direction[Direction["Up"] = 1] = "Up";
     Direction[Direction["Down"] = 2] = "Down";
+    Direction["Left"] = "Esquerda";
 })(Direction || (Direction = {}));
-console.log(Direction);
+const direction = Direction.Left;
+//Type Assertion (Tratar uma variável de um tipo como se fosse de outra)
+const productName = 'Boné';
+//let itemId = productName as string;
+let itemId = productName;
+console.log(itemId);

@@ -29,6 +29,15 @@ const productId: string | number | boolean = false;
 enum Direction{
     Up = 1,
     Down = 2,
+    Left = 'Esquerda',
 }
 
-console.log(Direction);
+const direction = Direction.Left;
+
+//Type Assertion (Tratar uma variável de um tipo como se fosse de outra)
+const productName: any = 'Boné';
+
+//let itemId = productName as string;
+let itemId = <string>productName;
+
+console.log(itemId);
